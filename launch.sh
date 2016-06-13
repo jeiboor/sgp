@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 THIS_DIR=$(cd $(dirname $0); pwd)
 cd $THIS_DIR
@@ -112,7 +112,7 @@ else
   fi
   while true; do
    rm -r ../.telegram-cli/state
-   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/seedbot.lua -l 1 -E $@
+   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/taylor-bot.lua -l 1 -E $@
    sleep 3
   done
 fi
